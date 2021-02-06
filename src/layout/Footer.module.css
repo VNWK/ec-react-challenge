@@ -1,0 +1,12 @@
+.root {
+  background-color: #cfcfcf;
+  width: 100%;
+  padding: .5rem 0;
+}
+
+.logo{
+  display: block;
+  max-height: 20px;
+  margin: 0 auto;
+  opacity: .5;
+}
