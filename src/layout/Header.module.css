@@ -1,0 +1,11 @@
+.root {
+  background-color: #f7c600;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.logo{
+  display: block;
+  max-height: 30px;
+  margin: 0 auto;
+}
