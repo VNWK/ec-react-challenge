@@ -3,12 +3,6 @@ import plans from '../constants/plans'
 
 export const AppContext = createContext({
   planSelected: 'standard',
-  form: {
-    name: '',
-    card: '',
-    exp: '',
-    cvc: '',
-  },
   planList: {},
   setPlanSelected: () => { },
   initPlanList: () => { },
@@ -17,7 +11,6 @@ export const AppContext = createContext({
 const AppContextProvider = props => {
   const [planSelected, setPlanSelected] = useState('standard')
   const [planList, setPlanList] = useState({})
-  const [form, setForm] = useState({})
 
   const initPlanList = () => {
     setPlanList(plans)
@@ -29,7 +22,7 @@ const AppContextProvider = props => {
   }, [])
 
   return (
-    <AppContext.Provider value={{ planSelected, setPlanSelected, planList, form }}>
+    <AppContext.Provider value={{ planSelected, setPlanSelected, planList }}>
       {props.children}
     </AppContext.Provider>
   )
