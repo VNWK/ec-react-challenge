@@ -1,13 +1,6 @@
 import styles from './PlanSwitcher.module.css'
 
-const PlanSwitcher = ({ planSelected, setPlanSelected }) => {
-
-  const switchPlanHandler = () => {
-    if (planSelected === 'standard')
-      setPlanSelected('premium')
-    else
-      setPlanSelected('standard')
-  }
+const PlanSwitcher = ({ planSelected, switchPlan }) => {
 
   return (
     <div className={styles.root}>
@@ -16,7 +9,7 @@ const PlanSwitcher = ({ planSelected, setPlanSelected }) => {
         <label className={styles.switch}>
           <input type="checkbox"
             checked={planSelected === 'premium'}
-            onChange={switchPlanHandler} />
+            onChange={switchPlan} />
           <span className={styles.slider}></span>
         </label>
       </div>
