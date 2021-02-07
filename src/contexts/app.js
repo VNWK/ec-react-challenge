@@ -16,13 +16,20 @@ const AppContextProvider = props => {
     setPlanList(plans)
   }
 
+  const switchPlan = () => {
+    if (planSelected === 'standard')
+      setPlanSelected('premium')
+    else
+      setPlanSelected('standard')
+  }
+
   useEffect(() => {
     console.log('initializing  plans')
     initPlanList()
   }, [])
 
   return (
-    <AppContext.Provider value={{ planSelected, setPlanSelected, planList }}>
+    <AppContext.Provider value={{ planSelected, switchPlan, planList }}>
       {props.children}
     </AppContext.Provider>
   )
