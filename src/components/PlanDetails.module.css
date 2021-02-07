@@ -1,0 +1,84 @@
+.root {
+  margin: 20px 0;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+  border-radius:1px;
+}
+
+.header {
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header > div {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.header h1{
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.header h1 span {
+  font-size: 34px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.header > div p{
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.header > p {
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto";
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.details {
+  padding: 20px;
+  position: relative;
+}
+
+.details ul {
+  margin: auto;
+}
+
+.details ul li{
+  display: block;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height:1.5;
+}
+
+.details ul li > div {
+  display: flex;
+}
+.details ul li img {
+  height: 10px;
+  margin-right: 5px;
+  margin-top: 5px;
+  vertical-align: bottom;
+}
+
+.disabledFeature{
+  opacity: .5;
+}
+.btn {
+  width: 100%;
+  padding:20px 0;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  text-align:center;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: bold;
+}
