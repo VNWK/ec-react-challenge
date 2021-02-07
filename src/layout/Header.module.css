@@ -9,3 +9,16 @@
   max-height: 30px;
   margin: 0 auto;
 }
+
+.root button {
+  border: none;
+  background-color: transparent;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.root button img{
+  height: 20px;
+  vertical-align:middle;
+}

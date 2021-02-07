@@ -23,7 +23,7 @@ const Form = () => {
       </div>
     </div>
 
-    <button className={styles.btn} onClick={ }>Pagar S/ 29.00</button>
+    <button className={styles.btn} onClick={() => { }}>Pagar S/ 29.00</button>
   </div>
 }
 

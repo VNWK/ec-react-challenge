@@ -1,14 +1,13 @@
-import { Fragment } from 'react'
 import Form from '../../components/Form'
 import PlanSummary from '../../components/PlanSummary'
+import BaseLayout from '../../layout/BaseLayout'
 
 const Datos = (props) => {
-
   return (
-    <Fragment>
+    <BaseLayout uri={props.location.pathname}>
       <Form />
       <PlanSummary />
-    </Fragment>
+    </BaseLayout>
 
   )
 }

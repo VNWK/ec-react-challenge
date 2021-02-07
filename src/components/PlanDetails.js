@@ -1,7 +1,10 @@
 import styles from './PlanDetails.module.css';
 import plans from '../constants/plans'
+import { useHistory } from 'react-router-dom'
 
 const PlanDetails = () => {
+  const history = useHistory()
+
   return <div className={styles.root}>
     <div className={styles.header}>
       <div>
@@ -25,7 +28,7 @@ const PlanDetails = () => {
         )}
       </ul>
     </div>
-    <button className={styles.btn}>Suscribirme</button>
+    <button className={styles.btn} onClick={() => history.push('/datos')}>Suscribirme</button>
 
   </div>
 }

@@ -1,14 +1,12 @@
-import { Fragment } from 'react'
 import PlanSwitcher from '../../components/PlanSwitcher'
 import PlanDetails from '../../components/PlanDetails'
-
+import BaseLayout from '../../layout/BaseLayout'
 const Suscripcion = (props) => {
-
   return (
-    <Fragment>
+    <BaseLayout uri={props.location.pathname}>
       <PlanSwitcher />
       <PlanDetails />
-    </Fragment>
+    </BaseLayout>
 
   )
 }
