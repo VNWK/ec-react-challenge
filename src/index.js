@@ -6,9 +6,13 @@ import './global.css'
 
 import App from './components/App';
 
+import AppContextProvider from './contexts/app'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppContextProvider>
+      <App />
+    </AppContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
