@@ -11,7 +11,6 @@ import Confirmacion from '../screens/Confirmacion/Confirmacion'
 import styles from './BaseLayout.module.css'
 
 const BaseLayout = (props) => {
-  console.log(props.uri)
   return (
     <Fragment>
       <Header uri={props.uri} />

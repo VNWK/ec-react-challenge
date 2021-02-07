@@ -19,9 +19,13 @@ const AppContextProvider = props => {
   const [planList, setPlanList] = useState({})
   const [form, setForm] = useState({})
 
+  const initPlanList = () => {
+    setPlanList(plans)
+  }
+
   useEffect(() => {
     console.log('initializing  plans')
-    setPlanList(plans)
+    initPlanList()
   }, [])
 
   return (
