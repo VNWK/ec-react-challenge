@@ -1,11 +1,15 @@
+import { useHistory } from 'react-router-dom'
+
 import { createContext, useState } from 'react'
+import { validateForm } from '../utils/form'
+
 
 export const FormContext = createContext({
   form: {
     name: '',
     card: '',
     exp: '',
-    cvc: '',
+    cvc: ''
   },
   errors: [],
   setForm: () => { },
@@ -13,15 +17,23 @@ export const FormContext = createContext({
 })
 
 const FormContextProvider = props => {
-  const [form, setForm] = useState({})
+  const [form, setForm] = useState({
+    name: '',
+    card: '',
+    exp: '',
+    cvc: ''
+  })
   const [errors, setErrors] = useState([])
 
   const submitForm = () => {
-    console.log('submitting form')
+    const errors = validateForm(form)
+
+    setErrors(errors)
+    return errors.length === 0
   }
 
   return (
-    <FormContext.Provider value={{ form, setForm, submitForm }}>
+    <FormContext.Provider value={{ form, setForm, submitForm, errors }}>
       {props.children}
     </FormContext.Provider>
   )

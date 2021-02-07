@@ -1,0 +1,8 @@
+.content {
+  min-height: calc(100vh - 150px);
+  padding: 20px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}

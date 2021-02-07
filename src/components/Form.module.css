@@ -53,3 +53,10 @@
   font-size: 18px;
   font-weight: bold;
 }
+
+.error {
+  font-size: 12px;
+  font-family: "Roboto";
+  margin-top: 10px;
+  opacity: .7;
+}
