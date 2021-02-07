@@ -6,6 +6,7 @@ import Footer from '../layout/Footer'
 
 import Suscripcion from '../screens/Suscripcion/Suscripcion'
 import Datos from '../screens/Datos/Datos'
+import Confirmacion from '../screens/Confirmacion/Confirmacion'
 
 import styles from './App.module.css'
 
@@ -18,7 +19,7 @@ const App = () => {
           <Switch>
             <Route path="/suscripcion" component={Suscripcion} />
             <Route path="/datos" component={Datos} />
-            <Route path="/confirmacion" component={() => <p>confirmacion</p>} />
+            <Route path="/confirmacion" component={Confirmacion} />
             <Redirect to="/suscripcion" />
           </Switch>
         </article>
