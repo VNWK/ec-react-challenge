@@ -7,11 +7,11 @@ import PlanDetails from '../../components/PlanDetails'
 import BaseLayout from '../../layout/BaseLayout'
 
 const Suscripcion = (props) => {
-  const { planSelected, setPlanSelected, planList } = useContext(AppContext)
+  const { planSelected, switchPlan, planList } = useContext(AppContext)
 
   return (
     <BaseLayout uri={props.location.pathname}>
-      <PlanSwitcher planSelected={planSelected} setPlanSelected={setPlanSelected} />
+      <PlanSwitcher planSelected={planSelected} switchPlan={switchPlan} />
       <PlanDetails planSelected={planSelected} planList={planList} />
     </BaseLayout>
 
