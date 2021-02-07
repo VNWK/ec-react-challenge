@@ -13,7 +13,7 @@ const Datos = (props) => {
 
   return (
     <BaseLayout uri={props.location.pathname}>
-      <Form form={form} setForm={setForm} submitForm={submitForm} errors={errors} />
+      <Form form={form} setForm={setForm} submitForm={submitForm} errors={errors} planList={planList} planSelected={planSelected} />
       <PlanSummary planSelected={planSelected} planList={planList} switchPlan={switchPlan} />
     </BaseLayout>
 
